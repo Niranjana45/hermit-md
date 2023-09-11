@@ -42,16 +42,16 @@ Function({
 		}
 	})
 	let msg = `╭━━━〔 ${BOT_INFO.split(";")[0]} ⁩〕━━━┈⊷
-┃✵╭──────────────
-┃✵│ Owner : ${BOT_INFO.split(";")[1]}
-┃✵│ User : ${m.pushName.replace( /[\r\n]+/gm, "" )}
-┃✵│ Plugins : ${commands.length}
-┃✵│ Runtime : ${runtime(process.uptime())}
-┃✵│ Mode : ${MODE}
-┃✵│ Platform : ${os.platform()}
-┃✵│ Ram : ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-┃✵│ Version : ${VERSION}
-┃✵╰──────────────
+┃⚡╭──────────────
+┃⚡│ *Owner :* ${BOT_INFO.split(";")[1]}
+┃⚡│ *User :* ${m.pushName.replace( /[\r\n]+/gm, "" )}
+┃⚡│ *Plugins :* ${commands.length}
+┃⚡│ *Runtime :* ${runtime(process.uptime())}
+┃⚡│ *Mode :* ${MODE}
+┃⚡│ *Platform :* ${os.platform()}
+┃⚡│ *Ram :* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+┃⚡│ *Version :* ${VERSION}
+┃⚡╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 `
 	for (const command in commandslist) {
