@@ -117,15 +117,15 @@ const audio = await downloadYouTubeAudio(search.videos[0].videoId, false);
 const { content_length } = await video(search.videos[0].videoId, false);
 const msg = `*${search.videos[0].title}* 
 
-*⬡ ID :* ${search.videos[0].videoId}
-*⬡ Duration :* ${search.videos[0].timestamp}
-*⬡ Viewers :* ${h2k(search.videos[0].views)}
-*⬡ Author :* ${search.videos[0].author.name}
-*⬡ Audio Size :* ${bytesToSize(audio.content_length)}
-*⬡ Video Size :* ${bytesToSize(content_length)}
+*® ID :* ${search.videos[0].videoId}
+*® Duration :* ${search.videos[0].timestamp}
+*® Viewers :* ${h2k(search.videos[0].views)}
+*® Author :* ${search.videos[0].author.name}
+*® Audio Size :* ${bytesToSize(audio.content_length)}
+*® Video Size :* ${bytesToSize(content_length)}
 
-1. *Audio*
-2. *Video*`
+1. *Audio🎶*
+2. *Video📽️*`
 await message.send(await getYoutubeThumbnail(search.videos[0].videoId), 'image', { caption: msg})
 })
 
